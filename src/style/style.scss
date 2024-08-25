@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Global
+body{
+    @apply bg-slate-50
+}
+// Layout
+.ntdl{
+    @apply flex
+}
+.ntbrnd{
+    @apply font-bold uppercase text-center bg-black rounded py-2 text-white mb-4;
+}
+.ntdsb{
+    @apply w-3/12 h-screen p-8; 
+}
+.ntmb{
+    @apply flex-auto
+}
+.ntutlsb{
+    @apply w-3/12
+}
+// Components
+.ntcom{
+    @apply mt-6;
+}
+.nt-profile-card{
+    @apply text-center;
+    .ntdimg{
+        @apply w-20 h-20 rounded-lg bg-gray-200 m-auto;
+    }
+    .ntun{
+        @apply font-bold capitalize;
+    }
+    .ntuid{
+        @apply block text-gray-400;
+    }
+}
+.nt-side-menu{
+    li{
+        + li{
+            @apply mt-1;
+        }
+    }
+    a{
+        @apply border rounded px-4 py-2 flex justify-between;
+        &.ntact{
+            @apply bg-black text-white flex-auto;
+            .ntpl{
+                @apply bg-white rounded px-1 text-black;
+            }
+        }
+    }
+}
