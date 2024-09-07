@@ -12,7 +12,6 @@ const menuItems = [
 
 const SideMenu = () => {
     const pathName = usePathname();
-    console.log("path name:",pathName);
     return(
         <div className="ntcom nt-side-menu">
             <ul>

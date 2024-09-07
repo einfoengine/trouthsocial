@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import DefaultLayout from "@/components/Layouts/DefaultLayout";
 import "../style/globals.css";
 import '../style/style.scss'
 
@@ -17,7 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <DefaultLayout>
+          {children}
+        </DefaultLayout>
+      </body>
     </html>
   );
 }

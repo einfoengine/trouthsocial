@@ -8,7 +8,19 @@ body{
 }
 // Layout
 .ntdl{
-    @apply flex
+    @apply flex;
+}
+.nttp{
+    @apply flex justify-between;
+}
+.ntpt{
+    @apply font-bold uppercase;
+}
+.nttm{
+    @apply mr-2;
+    a{
+        @apply mr-2 text-gray-400 hover:text-black;
+    }
 }
 .ntbrnd{
     @apply font-bold uppercase text-center bg-black rounded py-2 text-white mb-4;
@@ -26,6 +38,7 @@ body{
 .ntcom{
     @apply mt-6;
 }
+// profile card
 .nt-profile-card{
     @apply text-center;
     .ntdimg{
@@ -38,6 +51,7 @@ body{
         @apply block text-gray-400;
     }
 }
+// side menu
 .nt-side-menu{
     li{
         + li{
@@ -53,4 +67,11 @@ body{
             }
         }
     }
+}
+// feed
+.ntfd{
+    @apply border rounded p-4 mb-3;
+}
+.ntpi{
+    @apply flex;
 }
