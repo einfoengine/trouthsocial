@@ -8,7 +8,6 @@ const Avtr = ({ src }) => {
         alt="User avatar"
         width={50}
         height={50}
-        priority
       />
     </div>
   );
