@@ -9,7 +9,7 @@ const DefaultLayout = ({children}:{children: React.ReactNode}) => {
         <Sidebar/>        
         <div className="ntmb">
           <div className="nttp ntwz">
-            <div><h2 className='ntpt'>Feed</h2></div>
+            <div className='ntpt'><h2>Feed</h2></div>
             <div className="nttm">
               <ul>
                 <li>

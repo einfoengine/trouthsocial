@@ -4,8 +4,40 @@
 
 // Global
 body{
-    @apply bg-slate-50
+    @apply bg-slate-50;
 }
+// Typography
+p{
+    @apply text-gray-700;
+}
+// Helpar classes & mixins
+@mixin heading-2 {
+    h2, h3, h4{
+        @apply font-bold text-2xl;
+    }
+    span{
+        @apply text-gray-400 text-sm;
+    }
+}
+@mixin heading-3 {
+    @apply mb-5;
+    h2, h3, h4{
+        @apply font-bold text-xl;
+    }
+    span{
+        @apply text-gray-400 text-sm;
+    }
+}
+@mixin heading-4 {
+    @apply mb-3;
+    h2, h3, h4{
+        @apply font-bold text-base leading-4 mt-2;
+    }
+    span{
+        @apply text-gray-400 text-xs;
+    }
+}
+
 // Layout
 .ntdl{
     @apply flex;
@@ -14,7 +46,8 @@ body{
     @apply flex justify-between;
 }
 .ntpt{
-    @apply font-bold uppercase;
+    // @apply font-bold uppercase;
+    @include heading-2;
 }
 .nttm{
     @apply mr-2;
@@ -73,5 +106,15 @@ body{
     @apply border rounded p-4 mb-3;
 }
 .ntpi{
-    @apply flex;
+    @apply flex gap-3;
+}
+.ntavtr{
+    @apply rounded-full overflow-hidden h-12 w-12;
+}
+.ntpinf{
+    @include heading-4;
+    @apply grow;
+}
+.ntpe{
+    @apply rounded-full border h-7 w-7;
 }
