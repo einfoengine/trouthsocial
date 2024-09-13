@@ -4,7 +4,7 @@
 
 // Global
 body{
-    @apply bg-slate-50;
+    @apply bg-slate-50 bg-sky-50;
 }
 // Typography
 p{
@@ -20,7 +20,7 @@ p{
     }
 }
 @mixin heading-3 {
-    @apply mb-5;
+    @apply mb-3;
     h2, h3, h4{
         @apply font-bold text-xl;
     }
@@ -43,11 +43,10 @@ p{
     @apply p-6 flex gap-6;
 }
 .nttp{
-    @apply flex justify-between;
+    @apply flex justify-between pt-2;
 }
 .ntpt{
-    // @apply font-bold uppercase;
-    @include heading-4;
+    @include heading-3;
 }
 .nttm{
     @apply mr-2;
@@ -103,7 +102,13 @@ p{
 }
 // feed
 .ntfd{
-    @apply border rounded p-4 mb-3;
+    @apply border rounded p-4 mb-3 bg-white;
+    .ntact{
+        @apply text-xs text-gray-400 mt-3;
+        span{
+            @apply mr-2 hover:cursor-pointer hover:text-gray-500;
+        }
+    }
 }
 .ntpi{
     @apply flex gap-3;

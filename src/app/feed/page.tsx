@@ -59,7 +59,7 @@ const Feed = () => {
                     {/* nodes theme post information */}
                     <div className="ntft">
                         <p>{feed.text}</p>
-                        <div className="ntac">
+                        <div className="ntact">
                             <span>View {feed.reactions[0]}</span>
                             <span>Impression {feed.reactions[1]}</span>
                             <span>Shared {feed.reactions[2]}</span>
